@@ -165,7 +165,7 @@ a{
 
 .center-div{
   width: 50%;
-  background-image: url('../assets/center_back.jpg');
+  background-image: url('./assets/center_back.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }

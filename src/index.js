@@ -1,12 +1,9 @@
 let slidePos = 0;
 const slides = document.querySelectorAll('.carousel-item');
 const totalSlides = slides.length;
-
 const dots = document.querySelectorAll('.dot');
 const doctors = document.querySelectorAll('.pro-item');
-
 let allMainDivs = document.querySelectorAll('.main-div');
-
 let buttons = document.querySelectorAll('.left-but');
 const goHomes = document.querySelectorAll('.go-home');
 

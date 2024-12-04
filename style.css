@@ -317,6 +317,16 @@ h1{
   text-align: center;
 }
 
+.doc-badge{
+  padding: 0.4rem;
+  background-color: rgb(248, 245, 232);
+  border-radius: 20px;
+  border: 2px solid var(--clr-primary-dark);
+  color: var(--clr-primary-dark);
+  text-align: center;
+  width: fit-content;
+}
+
 .up-right{
   display: flex;
   flex-direction: column;
@@ -353,6 +363,41 @@ h1{
 .studio-desc{
   font-size: 0.8rem;
   padding: 1rem;
+}
+
+.doctor-content{
+  margin: auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+.doctor-img{
+  width: 200px;
+  aspect-ratio: 1/1;
+}
+
+.doc-img-text{
+  gap: 20px;
+}
+
+.doc-jobs{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  gap: 0.8rem;
+}
+
+.doc-job-lists{
+  display: flex;
+  gap: 20px;
+}
+
+.doc-top{
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1100px){
@@ -439,6 +484,10 @@ h1{
     margin-bottom: 15px;
     margin-top: 15px;
   }
+
+  .doctor-content{
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 700px){
@@ -448,6 +497,14 @@ h1{
     font-size: 1.2rem;
     height: 20rem;
     width: 80%;
+  }
+
+  .doc-img-text{
+    flex-direction: column;
+  }
+
+  .doc-job-lists{
+    flex-direction: column;
   }
 }
 

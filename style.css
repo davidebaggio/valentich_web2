@@ -269,6 +269,10 @@ h1{
   color: var(--clr-primary);
 }
 
+.pro-title{
+  padding-top: 1rem;
+}
+
 .pro-grid{
   height: 85vh;
   margin-right: 1rem;
@@ -375,7 +379,7 @@ h1{
 
 .doctor-img{
   width: 200px;
-  aspect-ratio: 1/1;
+  /* aspect-ratio: 1/1; */
 }
 
 .doc-img-text{
@@ -460,23 +464,26 @@ h1{
 
   .pro-grid{
     display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    margin-right: 0;
+    gap: 4rem;
+    overflow-x: scroll;
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
+    margin-right: 3rem;
+    margin-left: 3rem;
   }
 
-  .pro-grid::-webkit-scrollbar{
+  /* .pro-grid::-webkit-scrollbar{
     display: none;
-  }
+  } */
 
   .pro-item{
     margin: auto;
     justify-content: center;
     font-size: 1.2rem;
-    height: 20rem;
+    height: 70%;
     width: 50%;
+    text-align: center;
+    padding: 3rem;
   }
 
   .badge-img{
@@ -491,12 +498,18 @@ h1{
 }
 
 @media screen and (max-width: 700px){
+  .pro-grid{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .pro-item{
     margin: auto;
     justify-content: center;
     font-size: 1.2rem;
-    height: 20rem;
-    width: 80%;
+    height: 70%;
+    width: 100%;
+    padding: 1rem;
   }
 
   .doc-img-text{

@@ -2,15 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
 
 :root{
-  --clr-primary: #faa5bd;
-  --clr-primary-dark: #7d3b4d;
-  --clr-bg-light: #f1e3e7;
+  --clr-primary: #d5f7f4;
+  --clr-primary-dark: #4e7977;
+  /* --clr-bg-light: #f1e3e7; */
+  --clr-bg-light: var(--clr-primary);
 
   --ff: "Parkinsans", sans-serif;
 }
 
 /* *{
-  border: 1px solid var(--clr-dark);
+  border: 1px solid black;
 } */
 
 
@@ -375,6 +376,7 @@ h1{
   display: flex;
   flex-direction: column;
   padding: 1rem 1rem;
+  font-size: 0.8rem;
 }
 
 .doctor-img{
@@ -402,6 +404,56 @@ h1{
 .doc-top{
   display: flex;
   justify-content: space-between;
+}
+
+.index-main-div{
+ /*  display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-content-div, .choose-location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.index-left-div, .index-right-div{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-left-div, .link-right-div{
+  margin: 3rem;
+  padding: 1rem;
+  border: 2px solid var(--clr-primary-dark);
+  border-radius: 20px;
+  background-color: rgb(248, 245, 232);
+  color: var(--clr-primary-dark);
+}
+
+.index-val-img{
+  border-radius: 100px;
+  height: 100%;
+}
+
+.index-our-locs{
+  margin-top: 4rem;
+  font-size: 1.3rem;
+  /* text-align: center; */
+}
+
+.index-main-title{
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--clr-primary-dark);
 }
 
 @media screen and (max-width: 1100px){

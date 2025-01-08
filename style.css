@@ -421,6 +421,12 @@ h1{
   margin-right: 5rem;
 }
 
+.main-content-div{
+  background-color: var(--clr-primary-dark);
+  padding-bottom: 2rem;
+  border-radius: 30px;
+}
+
 .index-left-div, .index-right-div{
   width: 100%;
   height: 100%;
@@ -448,12 +454,17 @@ h1{
   margin-top: 4rem;
   font-size: 1.3rem;
   /* text-align: center; */
+  color: var(--clr-primary-dark);
 }
 
 .index-main-title{
   font-size: 2rem;
   font-weight: 700;
-  color: var(--clr-primary-dark);
+  color: var(--clr-primary);
+}
+
+.ambulatori{
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1100px){
@@ -546,6 +557,15 @@ h1{
 
   .doctor-content{
     width: 95%;
+  }
+
+  .main-content-div{
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .index-our-locs{
+    margin: 0;
   }
 }
 

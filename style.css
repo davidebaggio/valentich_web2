@@ -500,7 +500,7 @@ h1{
     display: none;
   }
 
-  .left-div{
+  .left-div, .right-div, .m-left-div, .m-right-div{
     width: 100%;
     height: 100vh;
     /* scroll-snap-align: start; */
@@ -511,12 +511,6 @@ h1{
     height: 100vh;
     /* scroll-snap-align: start; */
     background-attachment: fixed;
-  }
-
-  .right-div{
-    width: 100%;
-    height: 100vh;
-    /* scroll-snap-align: start; */
   }
 
   h1{

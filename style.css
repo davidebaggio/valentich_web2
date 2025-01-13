@@ -161,7 +161,7 @@ a{
 }
 
 .left-div{
-  width: 30%;
+  width: 25%;
 }
 
 .m-left-div{
@@ -184,7 +184,7 @@ a{
 }
 
 .right-div{
-  width: 20%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -478,6 +478,18 @@ h1{
   margin-bottom: 0;
 }
 
+.map{
+  width: 100%;
+}
+
+.mmap{
+  width: 70%;
+}
+
+.fs{
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 1100px){
   .bord{
     border: none;
@@ -595,6 +607,10 @@ h1{
 
   .doc-job-lists{
     flex-direction: column;
+  }
+
+  .mmap{
+    width: 100%;
   }
 }
 

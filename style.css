@@ -199,7 +199,7 @@ button{
 }
 
 h1{
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .left-div-desc{
@@ -288,19 +288,28 @@ h1{
 .pro-grid{
   height: 85vh;
   margin-right: 1rem;
+  margin-left: 1rem;
   padding: 0.5rem;
   display: grid;
-  grid-template-rows: 33% 33% 33%;
-  grid-template-columns: 33% 33% 33%;
-  grid-column: 3;
+  grid-template-rows: 47% 47%;
+  grid-template-columns: 50% 50%;
+  grid-column: 2;
   gap: 10px 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* hide bar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
 }
 
 .pro-item{
-  font-size: 0.7rem;
+  margin: 1rem;
+  font-size: 1rem;
   background-color: var(--clr-bg-light);
   border-radius: 20px;
   align-items: center;
+  height: 95%;
 }
 
 .pro-item:hover{
@@ -312,7 +321,8 @@ h1{
 .badge-img{
   aspect-ratio: 1;
   margin: auto;
-  height: 60%;
+  /* height: 60%; */
+  width: 60%;
   object-fit: cover;
   border-radius: 20px;
   margin-top: 0.3rem;
@@ -320,7 +330,7 @@ h1{
 
 .nome{
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 0.5rem;
 }
 
 .badge{
@@ -400,6 +410,7 @@ h1{
 }
 
 .doc-jobs{
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -490,6 +501,14 @@ h1{
   font-size: 1rem;
 }
 
+.rem2{
+  font-size: 2rem;
+}
+
+.rem1{
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 1100px){
   .bord{
     border: none;
@@ -544,8 +563,8 @@ h1{
 
   .pro-grid{
     display: flex;
-    gap: 4rem;
-    overflow-x: scroll;
+    gap: 1.5rem;
+    overflow-x: auto;
     /* -ms-overflow-style: none;
     scrollbar-width: none; */
     margin-right: 3rem;
@@ -557,17 +576,18 @@ h1{
   } */
 
   .pro-item{
+    flex: 0 0 90%;
     margin: auto;
     justify-content: center;
     font-size: 1.2rem;
-    height: 70%;
-    width: 50%;
+    height: 80%;
+    /* width: 70%; */
     text-align: center;
     padding: 3rem;
   }
 
   .badge-img{
-    height: 50%;
+    height: 60%;
     margin-bottom: 15px;
     margin-top: 15px;
   }

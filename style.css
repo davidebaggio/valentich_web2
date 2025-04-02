@@ -3,7 +3,7 @@
 
 :root{
   --clr-primary: #d5f7f4;
-  --clr-primary-dark: #4e7977;
+  --clr-primary-dark: rgb(78, 121, 119);
   /* --clr-bg-light: #f1e3e7; */
   --clr-bg-light: var(--clr-primary);
 
@@ -433,6 +433,8 @@ h1{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url('./assets/val_background_noise.png');
+  background-repeat: no-repeat;
 }
 
 .main-content-div, .choose-location{
@@ -444,9 +446,10 @@ h1{
 }
 
 .main-content-div{
-  background-color: var(--clr-primary-dark);
+  background-color: rgba(78, 121, 119, 0.3);
   padding-bottom: 2rem;
   border-radius: 30px;
+  height: 50%;
 }
 
 .index-left-div, .index-right-div{
@@ -483,6 +486,7 @@ h1{
   font-size: 2rem;
   font-weight: 700;
   color: var(--clr-primary);
+  text-shadow: 0 0 10px var(--clr-primary-dark);
 }
 
 .ambulatori{
